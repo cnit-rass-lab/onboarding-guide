@@ -1,4 +1,4 @@
-# Guida minimale a GitHub e onboarding all’organizzazione CNIT-RaSS-Lab
+# Onboarding GitHub per il personale del CNIT-RaSS-Lab
 
 ## 1. Registrazione a GitHub
 
@@ -6,6 +6,8 @@
 Per iniziare, è sufficiente creare un account personale.
 
 ### Procedura di registrazione
+
+Se è la prima volta che utilizzi GitHub, segui questi passaggi per registrarti. In caso contrario, accedi con il tuo account personale.
 
 1. Vai su [https://github.com](https://github.com)
 2. Clicca su **Sign up**.

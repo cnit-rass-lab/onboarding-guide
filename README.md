@@ -1,4 +1,4 @@
-# Onboarding GitHub per il personale del CNIT-RaSS-Lab
+# Onboarding GitHub per il personale del RaSS Lab
 
 ## 1. Registrazione a GitHub
 

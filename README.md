@@ -1,4 +1,4 @@
-# Onboarding GitHub per il personale del CNIT-RaSS-Lab
+# Onboarding GitHub per il personale del RaSS Lab
 
 ## 1. Registrazione a GitHub
 
@@ -36,7 +36,7 @@ Una volta effettuato l’accesso, puoi impostare alcune informazioni di base per
 | Campo                     | Cosa inserire                                   | Note                                                                                                         |
 | ------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | **Name**                  | Il tuo nome e cognome                           | Esempio: `Mario Rossi`                                                                                       |
-| **Bio**                   | Breve descrizione del tuo ruolo o attività      | Suggerimento: copia la bio da LinkedIn, es. `Telecommunications Engineer · Radar Researcher @ CNIT RaSS Lab` |
+| **Bio**                   | Breve descrizione del tuo ruolo o attività      | Suggerimento: copia la bio da LinkedIn, es. `Telecommunications Engineer \| Radar Researcher @ CNIT RaSS Lab` |
 | **Avatar (foto profilo)** | Immagine professionale con il viso ben visibile | Suggerimento: usa la stessa foto di LinkedIn                                                                 |
 | **Location**              | Città o semplicemente “Italy”                   | Facoltativo                                                                                                  |
 | **Website**               | Link al tuo profilo LinkedIn o sito personale   | Esempio: `linkedin.com/in/mario-rossi`                                                                       |
@@ -50,7 +50,7 @@ Proprio come un utente può avere repository personali, un’organizzazione può
 
 ### Caratteristiche principali
 
-* Ogni organizzazione ha un **nome**. Nel nostro caso: `CNIT-RaSS-Lab`.
+* Ogni organizzazione ha un **nome**. Nel nostro caso: `cnit-rass-lab`.
 * Al suo interno sono presenti **repository** condivisi (cioè i progetti).
   Questi possono essere:
 
@@ -66,7 +66,7 @@ Proprio come un utente può avere repository personali, un’organizzazione può
 ![people.png](people.png)
 ![repositories.png](repositories.png)
 
-### Come entrare nell’organizzazione CNIT-RaSS-Lab
+### Come entrare nell’organizzazione `cnit-rass-lab`
 
-Per entrare nell’organizzazione **CNIT-RaSS-Lab**, è sufficiente chiedere a uno degli amministratori di inviarti un invito.
+Per entrare nell’organizzazione `cnit-rass-lab`, è sufficiente chiedere a uno degli amministratori di inviarti un invito.
 Riceverai una notifica via email o direttamente su GitHub: clicca su **Join organization** per accettare.

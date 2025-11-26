@@ -1,5 +1,7 @@
 # GitHub onboarding for RaSS Lab staff
 
+---
+
 ## 1. Sign up to GitHub
 
 **GitHub** is a platform for source code management and collaboration on software development projects.
@@ -19,6 +21,8 @@ If this is your first time using GitHub, follow these steps to sign up. Otherwis
 After registering, you will receive a confirmation email: open it and click **Verify email address**.
 
 ![signup.png](signup.png)
+
+---
 
 ## 2. Minimal profile configuration
 
@@ -43,6 +47,8 @@ Once logged in, you can set some basic information to make your profile more rec
 
 ![profile.png](profile.png)
 
+---
+
 ## 3. Organisations on GitHub
 
 A **GitHub organisation** represents a working group, a company, or a research entity.
@@ -65,6 +71,8 @@ Just like a user can have personal repositories, an organisation can manage shar
 ![organization.png](organization.png)
 ![people.png](people.png)
 ![repositories.png](repositories.png)
+
+---
 
 ### How to join the `cnit-rass-lab` organisation
 

@@ -1,5 +1,7 @@
 # GitHub onboarding per il personale del RaSS Lab
 
+---
+
 ## 1. Registrazione a GitHub
 
 **GitHub** è una piattaforma per la gestione del codice sorgente e la collaborazione su progetti di sviluppo software.
@@ -19,6 +21,8 @@ Se è la prima volta che utilizzi GitHub, segui questi passaggi per registrarti.
 Dopo la registrazione riceverai un’email di conferma: aprila e clicca su **Verify email address**.
 
 ![signup.png](signup.png)
+
+---
 
 ## 2. Configurazione minimale del profilo
 
@@ -43,6 +47,8 @@ Una volta effettuato l’accesso, puoi impostare alcune informazioni di base per
 
 ![profile.png](profile.png)
 
+---
+
 ## 3. Le organizzazioni su GitHub
 
 Un’**organizzazione** su GitHub rappresenta un gruppo di lavoro, un’azienda o un ente di ricerca.
@@ -65,6 +71,8 @@ Proprio come un utente può avere repository personali, un’organizzazione può
 ![organization.png](organization.png)
 ![people.png](people.png)
 ![repositories.png](repositories.png)
+
+---
 
 ### Come entrare nell’organizzazione `cnit-rass-lab`
 

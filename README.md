@@ -1,72 +1,72 @@
-# Onboarding GitHub per il personale del RaSS Lab
+# GitHub onboarding for RaSS Lab staff
 
-## 1. Registrazione a GitHub
+## 1. Sign up to GitHub
 
-**GitHub** è una piattaforma per la gestione del codice sorgente e la collaborazione su progetti di sviluppo software.
-Per iniziare, è sufficiente creare un account personale.
+**GitHub** is a platform for source code management and collaboration on software development projects.
+To get started, you just need to create a personal account.
 
-### Procedura di registrazione
+### Registration steps
 
-Se è la prima volta che utilizzi GitHub, segui questi passaggi per registrarti. In caso contrario, accedi con il tuo account personale.
+If this is your first time using GitHub, follow these steps to sign up. Otherwise, simply log in with your existing account.
 
-1. Vai su [https://github.com](https://github.com)
-2. Clicca su **Sign up**.
-3. Inserisci la **tua email personale** (es. `mariorossi93@gmail.com`) e scegli una **password sicura**.
-   > Si può anche scegliere di procedere con `Continua con Google` o opzioni simili.
-4. Scegli un **username** (sarà il nome pubblico del tuo profilo, es. `MarioRossi` o `MarioRossi93`)
-5. Completa la **verifica** e il processo di registrazione.
+1. Go to [https://github.com](https://github.com)
+2. Click **Sign up**.
+3. Enter **your personal email** (e.g. `mariorossi93@gmail.com`) and choose a **strong password**.
+   > You can also choose to continue with `Continue with Google` or similar options.
+4. Choose a **username** (this will be your public profile name, e.g. `MarioRossi` or `MarioRossi93`).
+5. Complete the **verification** and registration process.
 
-Dopo la registrazione riceverai un’email di conferma: aprila e clicca su **Verify email address**.
+After registering, you will receive a confirmation email: open it and click **Verify email address**.
 
 ![signup.png](signup.png)
 
-## 2. Configurazione minimale del profilo
+## 2. Minimal profile configuration
 
-Una volta effettuato l’accesso, puoi impostare alcune informazioni di base per rendere il tuo profilo più riconoscibile e professionale.
+Once logged in, you can set some basic information to make your profile more recognisable and professional.
 
-### Come accedere alle impostazioni del profilo
+### How to access profile settings
 
-1. In alto a destra, clicca sulla tua **foto profilo**
-2. Seleziona **Settings → Profile**
+1. In the top‑right corner, click on your **profile picture**.
+2. Select **Settings → Profile**.
 
 ![settings.png](settings.png)
 
-### Campi essenziali da compilare
+### Essential fields to fill in
 
-| Campo                     | Cosa inserire                                   | Note                                                                                                         |
-| ------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| **Name**                  | Il tuo nome e cognome                           | Esempio: `Mario Rossi`                                                                                       |
-| **Bio**                   | Breve descrizione del tuo ruolo o attività      | Suggerimento: copia la bio da LinkedIn, es. `Telecommunications Engineer \| Radar Researcher @ CNIT RaSS Lab` |
-| **Avatar (foto profilo)** | Immagine professionale con il viso ben visibile | Suggerimento: usa la stessa foto di LinkedIn                                                                 |
-| **Location**              | Città o semplicemente “Italy”                   | Facoltativo                                                                                                  |
-| **Website**               | Link al tuo profilo LinkedIn o sito personale   | Esempio: `linkedin.com/in/mario-rossi`                                                                       |
+| Field                      | What to enter                                       | Notes                                                                                                         |
+| -------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Name**                   | Your first name and surname                         | Example: `Mario Rossi`                                                                                        |
+| **Bio**                    | Short description of your role or activity          | Tip: copy your LinkedIn bio, e.g. `Telecommunications Engineer \| Radar Researcher @ CNIT RaSS Lab`           |
+| **Avatar (profile photo)** | Professional picture with your face clearly visible | Tip: use the same photo as on LinkedIn                                                                        |
+| **Location**               | City or simply “Italy”                              | Optional                                                                                                      |
+| **Website**                | Link to your LinkedIn profile or personal website   | Example: `linkedin.com/in/mario-rossi`                                                                        |
 
 ![profile.png](profile.png)
 
-## 3. Le organizzazioni su GitHub
+## 3. Organisations on GitHub
 
-Un’**organizzazione** su GitHub rappresenta un gruppo di lavoro, un’azienda o un ente di ricerca.
-Proprio come un utente può avere repository personali, un’organizzazione può gestire repository condivisi tra i propri membri.
+A **GitHub organisation** represents a working group, a company, or a research entity.
+Just like a user can have personal repositories, an organisation can manage shared repositories among its members.
 
-### Caratteristiche principali
+### Main characteristics
 
-* Ogni organizzazione ha un **nome**. Nel nostro caso: `cnit-rass-lab`.
-* Al suo interno sono presenti **repository** condivisi (cioè i progetti).
-  Questi possono essere:
+* Each organisation has a **name**. In our case: `cnit-rass-lab`.
+* Inside it there are shared **repositories** (i.e. projects).
+  These can be:
 
-  * **Pubblici** – per progetti aperti, didattici, partecipazioni a challenge o iniziative open source.
-  * **Privati** – per attività interne o di sviluppo riservato, in cui si è scelto di usare GitHub come strumento di sviluppo e collaborazione.
+  * **Public** – for open projects, teaching material, challenges, or open‑source initiatives.
+  * **Private** – for internal or confidential development activities, where GitHub is used as a development and collaboration tool.
   
-  > ⚠️ **Attenzione:** per progetti che includono dati o know-how sensibile **non bisogna usare GitHub**, nemmeno con repository private.
+  > ⚠️ **Warning:** for projects that include sensitive data or know‑how, **GitHub must not be used**, not even with private repositories.
 
-* Gli utenti vengono aggiunti come **membri** con diversi livelli di permesso (Owner, Admin, Member, ecc.).
-  Nel nostro caso, tutti i membri sono attualmente **Owner** *(da confermare)*.
+* Users are added as **members** with different permission levels (Owner, Admin, Member, etc.).
+  In our case, all members are currently **Owners** *(to be confirmed)*.
 
 ![organization.png](organization.png)
 ![people.png](people.png)
 ![repositories.png](repositories.png)
 
-### Come entrare nell’organizzazione `cnit-rass-lab`
+### How to join the `cnit-rass-lab` organisation
 
-Per entrare nell’organizzazione `cnit-rass-lab`, è sufficiente chiedere a uno degli amministratori di inviarti un invito.
-Riceverai una notifica via email o direttamente su GitHub: clicca su **Join organization** per accettare.
+To join the `cnit-rass-lab` organisation, simply ask one of the administrators to send you an invitation.
+You will receive a notification by email or directly on GitHub: click **Join organization** to accept.

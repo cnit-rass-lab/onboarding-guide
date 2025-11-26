@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Guida onboarding CNIT RaSS Lab</title>
+    <title>CNIT RaSS Lab · GitHub Onboarding Guide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -56,7 +56,7 @@
         border-radius: 24px;
         border: 1px solid var(--border);
         box-shadow: var(--shadow);
-        padding: clamp(32px, 5vw, 64px);
+        padding: clamp(24px, 4vw, 40px) clamp(20px, 4vw, 40px);
         position: relative;
         overflow: hidden;
       }
@@ -91,6 +91,114 @@
         position: relative;
         z-index: 1;
         color: inherit;
+      }
+
+      .top-bar {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .top-title {
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--subtext);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+      }
+
+      .top-title-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #6366f1, #22c55e);
+        box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.18);
+      }
+
+      .language-switch {
+        display: inline-flex;
+        padding: 4px;
+        border-radius: 999px;
+        background: rgba(148, 163, 184, 0.18);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+      }
+
+      .lang-button {
+        position: relative;
+        border: none;
+        background: transparent;
+        color: var(--subtext);
+        padding: 6px 14px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.82rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.18s ease, background 0.18s ease, transform 0.12s ease;
+      }
+
+      .lang-button span.flag {
+        width: 18px;
+        height: 18px;
+        border-radius: 999px;
+        overflow: hidden;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #0f172a;
+        box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.6);
+      }
+
+      .lang-button span.flag img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .lang-button span.label {
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      .lang-button.active {
+        color: var(--text);
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.22);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .lang-button.active {
+          background: #020617;
+        }
+      }
+
+      .lang-button:hover:not(.active) {
+        background: rgba(15, 23, 42, 0.03);
+        transform: translateY(-1px);
+      }
+
+      .lang-button:focus-visible {
+        outline: 2px solid #6366f1;
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 640px) {
+        .top-bar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
 
       .loading {
@@ -233,8 +341,38 @@
   </head>
   <body>
     <div class="container">
+      <div class="top-bar" aria-label="Language selector">
+        <div class="top-title">
+          <span class="top-title-dot"></span>
+          CNIT RaSS Lab · GitHub onboarding guide
+        </div>
+        <div class="language-switch" role="radiogroup" aria-label="Language">
+          <button
+            class="lang-button active"
+            data-lang="en"
+            role="radio"
+            aria-checked="true"
+          >
+            <span class="flag">
+              <img src="flag_en.png" alt="English flag" />
+            </span>
+            <span class="label">English</span>
+          </button>
+          <button
+            class="lang-button"
+            data-lang="it"
+            role="radio"
+            aria-checked="false"
+          >
+            <span class="flag">
+              <img src="flag_it.png" alt="Bandiera italiana" />
+            </span>
+            <span class="label">Italiano</span>
+          </button>
+        </div>
+      </div>
       <div id="content" class="content">
-        <div class="loading">Caricamento della guida in corso…</div>
+        <div class="loading">Loading the guide…</div>
       </div>
     </div>
 
@@ -242,12 +380,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-vhyDb5zu/7YcJyVOVRyL5ol1FgZJzmT87j8YNJjY37YP5ARByaYCNVQeBg7CIJMkeb0tcUtwiYYyuWI3wRB7iw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       const content = document.getElementById('content');
+      const langButtons = document.querySelectorAll('.lang-button');
 
-      async function loadMarkdown() {
+      function getReadmeForLang(lang) {
+        return lang === 'it' ? 'README.it.md' : 'README.md';
+      }
+
+      function getLoadingText(lang) {
+        return lang === 'it' ? 'Caricamento della guida in corso…' : 'Loading the guide…';
+      }
+
+      function getErrorText(lang, status) {
+        if (lang === 'it') {
+          return `Impossibile caricare il file README (${status})`;
+        }
+        return `Unable to load README file (status ${status})`;
+      }
+
+      function setActiveLanguage(lang) {
+        document.documentElement.lang = lang === 'it' ? 'it' : 'en';
+        langButtons.forEach((btn) => {
+          const isActive = btn.dataset.lang === lang;
+          btn.classList.toggle('active', isActive);
+          btn.setAttribute('aria-checked', isActive ? 'true' : 'false');
+        });
+      }
+
+      async function loadMarkdown(lang) {
+        const selectedLang = lang === 'it' ? 'it' : 'en';
+        setActiveLanguage(selectedLang);
+        localStorage.setItem('rass-onboarding-lang', selectedLang);
+
+        content.classList.remove('markdown-body');
+        content.innerHTML = `<div class="loading">${getLoadingText(selectedLang)}</div>`;
+
+        const readmePath = getReadmeForLang(selectedLang);
+
         try {
-          const response = await fetch('README.md');
+          const response = await fetch(readmePath);
           if (!response.ok) {
-            throw new Error(`Impossibile caricare il file README.md (status ${response.status})`);
+            throw new Error(getErrorText(selectedLang, response.status));
           }
           const text = await response.text();
           marked.setOptions({
@@ -269,7 +441,15 @@
         }
       }
 
-      loadMarkdown();
+      langButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const lang = btn.dataset.lang || 'en';
+          loadMarkdown(lang);
+        });
+      });
+
+      const savedLang = localStorage.getItem('rass-onboarding-lang') || 'en';
+      loadMarkdown(savedLang);
     </script>
   </body>
 </html>
